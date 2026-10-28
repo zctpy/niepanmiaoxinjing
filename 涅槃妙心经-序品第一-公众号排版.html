@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>涅槃妙心经 · 序品第一（双语）｜公众号排版稿</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23a67c2e' d='M32 8c2 6 2 10-2 13s-8 4-12 2c1-5 4-9 8-11s4-2 6-4zm0 0c-2 6 0 10 4 13s9 3 13 1c-2-5-5-9-9-11s-6-1-8-3zm-8 18c4 2 8 2 11 6s4 9 2 13c-5-1-9-4-11-8s-3-8-2-11zm16 0c-4 2-7 3-9 7s-2 9 0 12c4-1 8-4 10-8s1-8 1-11zM14 46c5 1 9 4 10 8s-1 8-4 9c-3-4-6-7-10-9-1-3-1-6 4-8zm36 0c-5 1-9 4-10 8s1 8 4 9c3-4 6-7 10-9 1-3 1-6-4-8zM24 40c4 1 7 3 8 6s0 7-3 8c-2-4-4-7-8-9-1-2-1-4 3-5zm16 0c-4 1-7 3-8 6s0 7 3 8c2-4 4-7 8-9 1-2 1-4-3-5z'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --paper:#f5f0e4;
+    --card:#fffdf8;
+    --ink:#33302a;
+    --ink-soft:#6d665a;
+    --gold:#a67c2e;
+    --gold-deep:#8a6420;
+    --gold-soft:#c9a35f;
+    --cinnabar:#9e3a2c;
+    --line:#e5dcc6;
+    --green:#3f6f5d;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  .post{
+    max-width:680px;
+    margin:0 auto;
+    background:var(--card);
+    padding:0 22px 64px;
+    box-shadow:0 0 40px rgba(138,110,60,.08);
+  }
+  /* ===== 文章头部 ===== */
+  header.post-head{
+    padding:52px 6px 8px;
+    text-align:center;
+    border-bottom:1px solid var(--line);
+  }
+  .kicker{
+    font-family:"Noto Sans SC","Microsoft YaHei",sans-serif;
+    font-size:12px;
+    letter-spacing:.5em;
+    color:var(--gold);
+    margin-bottom:18px;
+  }
+  h1.title{
+    font-size:40px;
+    font-weight:700;
+    letter-spacing:.18em;
+    color:var(--ink);
+    line-height:1.4;
+  }
+  .chapter{
+    margin-top:12px;
+    font-size:15px;
+    color:var(--ink-soft);
+    letter-spacing:.12em;
+  }
+  .chapter .cn{color:var(--cinnabar);}
+  .meta{
+    margin-top:22px;
+    font-size:12.5px;
+    color:#9a9183;
+    letter-spacing:.2em;
+    font-family:"Noto Sans SC","Microsoft YaHei",sans-serif;
+  }
+  .meta span{margin:0 8px;}
+  /* ===== 封面 ===== */
+  figure.cover{
+    margin:26px 0 8px;
+    border-radius:6px;
+    overflow:hidden;
+  }
+  figure.cover img{width:100%;display:block;}
+  figcaption{
+    margin-top:10px;
+    text-align:center;
+    font-size:12px;
+    color:#9a9183;
+    letter-spacing:.15em;
+  }
+  /* ===== 章节 ===== */
+  section.body-sec{margin:34px 0 8px;}
+  .sec-label{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin:0 0 22px;
+  }
+  .sec-label .rule{flex:1;height:1px;background:var(--line);}
+  .sec-label .txt{
+    font-family:"Noto Sans SC","Microsoft YaHei",sans-serif;
+    font-size:13px;
+    letter-spacing:.3em;
+    color:var(--gold-deep);
+    white-space:nowrap;
+  }
+  .sec-label .num{
+    font-size:12px;
+    color:var(--gold-soft);
+    letter-spacing:.1em;
+  }
+  /* ===== 经文对译 ===== */
+  p.cn{
+    font-size:17px;
+    line-height:2.0;
+    text-align:justify;
+    color:var(--ink);
+  }
+  p.en{
+    font-size:13.5px;
+    line-height:1.85;
+    color:var(--ink-soft);
+    margin:2px 0 14px;
+    padding-left:1.2em;
+    border-left:2px solid var(--line);
+    text-align:justify;
+  }
+  p.en em{font-style:italic;}
+  .speech{color:var(--green);}
+  /* ===== 金句 ===== */
+  blockquote.quote{
+    margin:38px 0;
+    padding:26px 18px;
+    text-align:center;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  blockquote.quote .q-cn{
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:.28em;
+    color:var(--gold-deep);
+  }
+  blockquote.quote .q-en{
+    margin-top:10px;
+    font-size:13px;
+    color:var(--ink-soft);
+    letter-spacing:.05em;
+  }
+  /* ===== 插图 ===== */
+  figure.fig{
+    margin:34px 0 6px;
+    border-radius:6px;
+    overflow:hidden;
+    background:#efe9d9;
+  }
+  figure.fig img{width:100%;display:block;}
+  figure.fig figcaption{
+    padding:10px 4px 0;
+    font-size:12px;
+    color:#9a9183;
+    letter-spacing:.14em;
+  }
+  /* ===== 莲华分隔 ===== */
+  .divider{
+    margin:44px auto;
+    text-align:center;
+    color:var(--gold-soft);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+  }
+  .divider::before,.divider::after{
+    content:"";
+    width:56px;height:1px;background:var(--line);
+  }
+  /* ===== 页脚 ===== */
+  footer.post-foot{
+    margin-top:46px;
+    padding-top:20px;
+    border-top:1px solid var(--line);
+    text-align:center;
+    font-family:"Noto Sans SC","Microsoft YaHei",sans-serif;
+    font-size:12px;
+    color:#9a9183;
+    line-height:2;
+    letter-spacing:.06em;
+  }
+  /* ===== 响应式 ===== */
+  @media (max-width:480px){
+    .post{padding:0 14px 48px;}
+    h1.title{font-size:30px;}
+    p.cn{font-size:16px;}
+    p.en{font-size:14.5px;}
+    blockquote.quote .q-cn{font-size:19px;}
+    .sec-label .txt{font-size:12.5px;letter-spacing:.2em;}
+  }
+</style>
+</head>
+<body>
+<article class="post">
+
+  <!-- ===== 头部 ===== -->
+  <header class="post-head">
+    <div class="kicker">佛典 · 双语诵译</div>
+    <h1 class="title">涅槃妙心经</h1>
+    <div class="chapter">
+      <span class="cn">序品第一</span> · <span>Chapter One: The Opening Chapter</span>
+    </div>
+    <div class="meta"><span>如是我闻</span><span>一时佛在大灵鹫山</span></div>
+  </header>
+
+  <!-- ===== 封面 ===== -->
+  <figure class="cover">
+    <img src="assets/封面-涅槃妙心经.jpg" alt="涅槃妙心经 公众号头图：佛陀于灵鹫山说法">
+    <figcaption>灵鹫山说法图 · 金碧重彩</figcaption>
+  </figure>
+
+  <!-- ===== 一 · 灵鹫山大众云集 ===== -->
+  <section class="body-sec">
+    <div class="sec-label">
+      <span class="rule"></span>
+      <span class="txt">灵鹫山大众云集</span>
+      <span class="rule"></span>
+    </div>
+    <p class="cn">如是我闻。</p>
+    <p class="en">Thus have I heard.</p>
+    <p class="cn">一时佛在大灵鹫山。</p>
+    <p class="en">At one time, the Buddha was dwelling on Great Vulture Peak.</p>
+    <p class="cn">与大比丘八万人俱。</p>
+    <p class="en">He was accompanied by eighty thousand great bhikkhus.</p>
+    <p class="cn">尊者阿难、尊者舍利弗、尊者摩诃目连、尊者摩诃迦叶，而为上首。</p>
+    <p class="en">The Venerable Ananda, the Venerable Shariputra, the Venerable Mahamaudgalyayana, and the Venerable Mahakashyapa were among their foremost leaders.</p>
+    <p class="cn">与菩萨众八万人俱。</p>
+    <p class="en">He was also accompanied by eighty thousand bodhisattvas.</p>
+    <p class="cn">观世音菩萨、阿逸陀菩萨、行愿普贤菩萨、文殊师利菩萨，而为上首。</p>
+    <p class="en">Avalokiteshvara Bodhisattva, Ajita Bodhisattva, Samantabhadra Bodhisattva of Great Vows and Practice, and Manjushri Bodhisattva were among their foremost leaders.</p>
+    <p class="cn">诸大梵天王、释提桓因、毗沙门王、大持国王，无量天众俱。</p>
+    <p class="en">The great Brahma kings, Shakra, King Vaishravana, King Dhritarashtra, and countless celestial beings were also present.</p>
+    <p class="cn">海龙王、夜叉王、阿修罗王，无量神众俱。</p>
+    <p class="en">The Dragon Kings of the seas, the Yaksha kings, the Asura kings, and countless spiritual beings were assembled there.</p>
+    <p class="cn">阿闍世王、波斯匿王、宰官婆罗门，无量人众俱。</p>
+    <p class="en">King Ajatashatru, King Prasenajit, government officials, Brahmins, and countless human beings were also present.</p>
+    <p class="cn">达多地狱、焰口饿鬼、金色师子、六牙象王，无量非人俱。</p>
+    <p class="en">Beings from the Datta Hell, flame-mouthed hungry ghosts, golden lions, six-tusked elephant kings, and countless nonhuman beings were also present.</p>
+    <p class="cn">各礼佛足，退坐一面。</p>
+    <p class="en">They all bowed at the Buddha's feet, withdrew, and took their seats to one side.</p>
+  </section>
+
+  <figure class="fig">
+    <img src="assets/插图一-灵鹫山大众云集.jpg" alt="插图一：灵鹫山说法大会全景">
+    <figcaption>插图一 · 灵鹫山说法大会全景</figcaption>
+  </figure>
+
+  <!-- ===== 二 · 东行震旦 五宝台三王 ===== -->
+  <section class="body-sec">
+    <div class="sec-label">
+      <span class="rule"></span>
+      <span class="txt">东行震旦 · 五宝台三王</span>
+      <span class="rule"></span>
+    </div>
+    <p class="cn">尔时世尊，从多宝佛入塔下，大众围绕，飞行东方百千里程。</p>
+    <p class="en">At that time, the World-Honored One descended from the stupa of Many Treasures Buddha, surrounded by the assembly, and traveled through the air hundreds of thousands of miles toward the east.</p>
+    <p class="cn">有一国土名大七宝震旦。</p>
+    <p class="en">There was a land called Great Seven-Treasure Zhendan.</p>
+    <p class="cn">其国中央有一高山，名五宝台。</p>
+    <p class="en">At the center of that land stood a lofty mountain called the Five-Treasure Terrace.</p>
+    <p class="cn">文殊师利常在说法。</p>
+    <p class="en">Manjushri Bodhisattva frequently resided there, expounding the Dharma.</p>
+    <p class="cn">世尊至于此山，告大众言。</p>
+    <p class="en">When the World-Honored One arrived at this mountain, he addressed the assembly, saying:</p>
+    <p class="cn">昔于此国，观世音菩萨化作三禅初梵王，化人间故，没梵宫殿，下生王宫。</p>
+    <p class="en">Long ago, in this land, Avalokiteshvara Bodhisattva manifested as the Great Brahma King of the First Heaven of the Third Dhyana, descending from the Brahma palace and taking birth in a royal palace to transform the human world.</p>
+    <p class="cn">大德龙身，说示天理五行气变化吉凶法。</p>
+    <p class="en">Manifesting a noble dragon-like form, this being taught the principles of Heaven, the Five Phases, the transformations of vital energy, and the patterns associated with fortune and misfortune.</p>
+    <p class="cn">地没还天，作春天主。</p>
+    <p class="en">After disappearing into the earth, he returned to Heaven and became the presiding lord of spring.</p>
+    <p class="cn">观世音菩萨化作初禅二大梵王，化人间故，没天宫殿，下生王宫。</p>
+    <p class="en">Avalokiteshvara Bodhisattva also manifested as the Second Great Brahma King of the First Dhyana, descending from the celestial palace and taking birth in a royal palace to transform the human world.</p>
+    <p class="cn">火德牛头，说示地利百药医毒助人间气。</p>
+    <p class="en">With the virtue of fire and a bull-headed form, this being taught the benefits of the earth, the healing properties and toxic effects of hundreds of medicines, and methods of assisting the vital energy of humankind.</p>
+    <p class="cn">地没还天，作夏天主。</p>
+    <p class="en">After disappearing into the earth, he returned to Heaven and became the presiding lord of summer.</p>
+    <p class="cn">观世音菩萨化作帝释，化人间故，没天宫殿，下生王宫。</p>
+    <p class="en">Avalokiteshvara Bodhisattva also manifested as Emperor Shakra, descending from the celestial palace and taking birth in a royal palace to transform the human world.</p>
+    <p class="cn">土德人质，说示人伦心法大道身法五伦。</p>
+    <p class="en">With the virtue of earth and a human form, this being taught the principles governing human relationships, the great Way of the mind, the cultivation of the body, and the Five Human Relationships.</p>
+    <p class="cn">地没还天，作土用主。</p>
+    <p class="en">After disappearing into the earth, he returned to Heaven and became the presiding lord of the earth element.</p>
+    <p class="cn">是三王者，说示天地人三才性德。</p>
+    <p class="en">These three kings revealed the inherent virtues and principles of Heaven, Earth, and Humanity—the Three Powers.</p>
+    <p class="cn">依俗说法，示第一义。</p>
+    <p class="en">Using teachings suited to worldly understanding, they revealed the Supreme Truth.</p>
+    <p class="cn">皆是观音大悲应化故。</p>
+    <p class="en">All these manifestations arose from the great compassion of Avalokiteshvara.</p>
+    <p class="cn">此国观音有缘。</p>
+    <p class="en">The beings of this land have a karmic affinity with Avalokiteshvara.</p>
+    <p class="cn">末法世中，我法流布。</p>
+    <p class="en">In the age of the decline of the Dharma, my teaching will spread throughout this land.</p>
+    <p class="cn">余佛缘灭，唯存观音，化益永世。</p>
+    <p class="en">When the karmic connections with other Buddhas have faded, the connection with Avalokiteshvara alone will remain, bringing transformation and benefit to the world throughout the ages.</p>
+    <p class="cn">说是语已，三王出现，顶礼佛足。</p>
+    <p class="en">Having spoken these words, the three kings appeared and bowed at the Buddha's feet.</p>
+    <p class="cn">而白佛言，世尊，如今佛说如是。</p>
+    <p class="en">They addressed the Buddha, saying, <em class="speech">“World-Honored One, what the Buddha has just proclaimed is indeed so.”</em></p>
+  </section>
+
+  <figure class="fig">
+    <img src="assets/插图二-五宝台三王顶礼.jpg" alt="插图二：五宝台三王顶礼佛足">
+    <figcaption>插图二 · 五宝台 · 三王顶礼佛足</figcaption>
+  </figure>
+
+  <!-- ===== 三 · 大日发国 天女日月 ===== -->
+  <section class="body-sec">
+    <div class="sec-label">
+      <span class="rule"></span>
+      <span class="txt">大日发国 · 天女日月</span>
+      <span class="rule"></span>
+    </div>
+    <p class="cn">尔时世尊，从座而起，为三王及大众等，亦行东方万里海上。</p>
+    <p class="en">At that time, the World-Honored One rose from his seat and, accompanied by the three kings and the great assembly, traveled eastward for thousands of miles across the sea.</p>
+    <p class="cn">海中有国名大日发，东西南北围绕诸眷属国。</p>
+    <p class="en">In the midst of the sea lay a land called Great Sun Emergence, surrounded in every direction by its affiliated lands.</p>
+    <p class="cn">世尊至于此国海边，告大众言。</p>
+    <p class="en">When the World-Honored One arrived at the coast of this land, he addressed the assembly, saying:</p>
+    <p class="cn">往昔劫初，观世音菩萨化作色界第十梵王。</p>
+    <p class="en">At the beginning of a past kalpa, Avalokiteshvara Bodhisattva manifested as the Tenth Brahma King of the Form Realm.</p>
+    <p class="cn">告初梵王，汝下空中欲界天界，次第造天地。</p>
+    <p class="en">He instructed the First Brahma King, saying, <em class="speech">“Descend through the heavens of the Desire Realm and, in due order, establish Heaven and Earth.”</em></p>
+    <p class="cn">最后造斯国及眷属海中国山河草木。</p>
+    <p class="en"><em class="speech">“Finally, establish this land and its affiliated islands in the sea, together with their mountains, rivers, and vegetation.”</em></p>
+    <p class="cn">时有一天女，名妙辨才。</p>
+    <p class="en">At that time, there was a celestial maiden named Wonderful Eloquence.</p>
+    <p class="cn">是亦观世音菩萨无量劫来以女像作大福田，来为王女。</p>
+    <p class="en">She too was Avalokiteshvara Bodhisattva, who through countless kalpas had manifested in female form as a great field of merit and now appeared as a king's daughter.</p>
+    <p class="cn">即成日轮及月光轮，主四天下。</p>
+    <p class="en">She then brought forth the solar orb and the lunar orb, presiding over the Four Continents of the world.</p>
+    <p class="cn">眷属无量住此国中，或主或伴。</p>
+    <p class="en">Countless affiliated beings dwelt in this land, some as leaders and others as companions.</p>
+    <p class="cn">是故其国观音有缘。</p>
+    <p class="en">Therefore, the beings of this land have a karmic affinity with Avalokiteshvara.</p>
+    <p class="cn">末法世中，我法流布。</p>
+    <p class="en">In the age of the decline of the Dharma, my teaching will spread throughout this land.</p>
+    <p class="cn">余佛缘灭，唯存观音，化益永世。</p>
+    <p class="en">When the karmic connections with other Buddhas have faded, the connection with Avalokiteshvara alone will remain, bringing transformation and benefit to the world throughout the ages.</p>
+    <p class="cn">说是语已，天女出现，顶礼佛足。</p>
+    <p class="en">Having spoken these words, the celestial maiden appeared and bowed at the Buddha's feet.</p>
+    <p class="cn">而白佛言，世尊，如今佛说如是。</p>
+    <p class="en">She addressed the Buddha, saying, <em class="speech">“World-Honored One, what the Buddha has just proclaimed is indeed so.”</em></p>
+  </section>
+
+  <figure class="fig">
+    <img src="assets/插图三-大日发国天女日月.jpg" alt="插图三：大日发国天女化现日月双轮">
+    <figcaption>插图三 · 大日发国 · 天女化现日月双轮</figcaption>
+  </figure>
+
+  <!-- ===== 四 · 海中诸国土 ===== -->
+  <section class="body-sec">
+    <div class="sec-label">
+      <span class="rule"></span>
+      <span class="txt">海中诸国土 · 结缘成佛</span>
+      <span class="rule"></span>
+    </div>
+    <p class="cn">尔时世尊，从座而起，为天女及大众等，亦行东方。</p>
+    <p class="en">At that time, the World-Honored One rose from his seat and, accompanied by the celestial maiden and the great assembly, continued traveling eastward.</p>
+    <p class="cn">于其海中有诸国土。</p>
+    <p class="en">Within that sea lay numerous lands.</p>
+    <p class="cn">世尊至于此国海边，告大众言。</p>
+    <p class="en">When the World-Honored One arrived at the coast of one such land, he addressed the assembly, saying:</p>
+    <p class="cn">此国众生质近畜生。</p>
+    <p class="en">The beings of this land are deeply immersed in dispositions resembling those of animals.</p>
+    <p class="cn">虽我正法渐渐流布，难有悟入。</p>
+    <p class="en">Although my true Dharma will gradually spread among them, few will find it easy to awaken to and enter its profound meaning.</p>
+    <p class="cn">但作结缘，为成佛缘。</p>
+    <p class="en">For now, it is enough to establish a karmic connection with the Dharma, thereby planting the seeds of future Buddhahood.</p>
+  </section>
+
+  <figure class="fig">
+    <img src="assets/插图四-海中诸国土大众飞行.jpg" alt="插图四：世尊与大众飞行于海中诸国土之上">
+    <figcaption>插图四 · 世尊与大众飞行于海中诸国土之上</figcaption>
+  </figure>
+
+  <div class="divider"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3c1.4 2.6 1 4.6-.8 6.2-1.6 1.4-4 1.6-5.6.6.6-2.6 2.4-4.6 4.4-5.8.6-.4 1.2-.7 2-1zm0 0c-1.4 2.6-1 4.6.8 6.2 1.6 1.4 4 1.6 5.6.6-.6-2.6-2.4-4.6-4.4-5.8-.6-.4-1.2-.7-2-1zM7 10c2.3.7 4.2 2.2 4.8 4.4.5 2-.2 4-1.8 5-1.2-2.2-2.6-4-4.6-5.3-.9-1.4-.7-3 1.6-4.1zm10 0c-2.3.7-4.2 2.2-4.8 4.4-.5 2 .2 4 1.8 5 1.2-2.2 2.6-4 4.6-5.3.9-1.4.7-3-1.6-4.1z" fill="#c9a35f"/></svg></div>
+
+  <!-- ===== 五 · 还山付嘱 妙法莲华 ===== -->
+  <section class="body-sec">
+    <div class="sec-label">
+      <span class="rule"></span>
+      <span class="txt">还山付嘱 · 妙法莲华</span>
+      <span class="rule"></span>
+    </div>
+    <p class="cn">尔时世尊，为诸大众，还至本处灵鹫山顶，敷座而坐。</p>
+    <p class="en">At that time, the World-Honored One returned with the great assembly to his original place atop Vulture Peak, spread his seat, and sat down.</p>
+    <p class="cn">告诸大众，我不久当般涅槃。</p>
+    <p class="en">He addressed the assembly, saying, <em class="speech">“Before long, I shall enter Parinirvana.”</em></p>
+    <p class="cn">诸大众意有欲问法，自恣为问。</p>
+    <p class="en"><em class="speech">“If any among you wish to ask about the Dharma, please feel free to ask.”</em></p>
+    <p class="cn">时诸大众，默然而坐，一切无声。</p>
+    <p class="en">At that moment, the entire assembly sat in silence, and not a sound was heard.</p>
+    <p class="cn">尔时世尊，非现神而示妙相，成就妙大方广佛心真如莲华。</p>
+    <p class="en">At that time, the World-Honored One did not display supernatural powers in the ordinary sense, but revealed a wondrous aspect: the sublime, vast, and all-encompassing Lotus of Suchness, the true nature of the Buddha-mind.</p>
+    <p class="cn">成就五百那由他劫前受用法身。</p>
+    <p class="en">He revealed the Sambhogakaya, the Enjoyment Body of the Dharma, cultivated and perfected through five hundred nayutas of kalpas in the past.</p>
+    <p class="cn">成就佛佛能尽究竟诸法实相。</p>
+    <p class="en">He revealed the ultimate capacity of every Buddha to fully comprehend the true reality of all phenomena.</p>
+    <p class="cn">成就华严阿含方等般若一乘修多罗藏。</p>
+    <p class="en">He revealed the complete treasury of the One Vehicle sutras, encompassing the Avatamsaka, Agama, Vaipulya, and Prajna teachings.</p>
+    <p class="cn">成就妙法莲华光明真如大愿。</p>
+    <p class="en">He revealed the great vow of luminous Suchness embodied in the wondrous Lotus of the True Dharma.</p>
+    <p class="cn">成就过去无量劫前入灭不灭。</p>
+    <p class="en">He revealed the mystery of entering Nirvana in the distant past without ever truly ceasing to be.</p>
+    <p class="cn">成就宝塔，是法界塔，常寂光土。</p>
+    <p class="en">He revealed the jeweled stupa as the Stupa of the Dharma Realm itself, abiding in the Land of Eternal Stillness and Light.</p>
+    <p class="cn">成就分座，是即理智自他法身。</p>
+    <p class="en">He revealed the sharing of the seat as the unity of principle and wisdom, of self and other, and of the Dharma Body.</p>
+    <p class="cn">如是成就二躬世尊牟尼如来，化现灵鹫华藏世界。</p>
+    <p class="en">Thus the two World-Honored Ones, the Sage of the Shakyas and the Tathagata of Many Treasures, manifested the wondrous world of the Lotus Treasury at Vulture Peak.</p>
+    <p class="cn">多宝如来已还宝座。</p>
+    <p class="en">Many Treasures Tathagata had returned to his jeweled seat.</p>
+    <p class="cn">成就寂光世界。</p>
+    <p class="en">The Land of Eternal Stillness and Light was thereby revealed.</p>
+    <p class="cn">二土融通，成就一土。</p>
+    <p class="en">The two lands merged and interpenetrated, becoming one single realm.</p>
+    <p class="cn">是即开见，凡夫心中，元有佛心。</p>
+    <p class="en">This was the opening of vision through which it became clear that, within the minds of ordinary beings, the Buddha-mind has always been present.</p>
+    <p class="cn">凡夫成佛，至大妙法。</p>
+    <p class="en">For ordinary beings to realize Buddhahood is the supreme and wondrous Dharma.</p>
+    <p class="cn">是即欲以此妙法藏，而付后师摩诃迦叶所由相也。</p>
+    <p class="en">This was the very sign that the treasury of this wondrous Dharma was about to be entrusted to the future patriarch, Mahakashyapa.</p>
+    <p class="cn">尔时世尊，不起法华妙道法座。</p>
+    <p class="en">At that time, the World-Honored One remained seated upon the wondrous Dharma seat of the Lotus Way, without rising from it.</p>
+  </section>
+
+  <figure class="fig">
+    <img src="assets/插图五-多宝佛塔二佛分座.jpg" alt="插图五：灵鹫山顶多宝佛塔 二佛分座 付嘱迦叶">
+    <figcaption>插图五 · 多宝佛塔 · 二佛分座 · 付嘱迦叶</figcaption>
+  </figure>
+
+  <!-- ===== 金句 ===== -->
+  <blockquote class="quote">
+    <div class="q-cn">凡夫成佛 · 至大妙法</div>
+    <div class="q-en">For ordinary beings to realize Buddhahood is the supreme and wondrous Dharma.</div>
+  </blockquote>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="post-foot">
+    <div>《涅槃妙心经》序品第一 · 双语对照</div>
+    <div>经文原文出自《涅槃妙心经》，对译供学习参考</div>
+    <div>配图由 AI 辅助创作 · 金碧重彩</div>
+  </footer>
+
+</article>
+</body>
+</html>
