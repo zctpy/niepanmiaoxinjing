@@ -23,3 +23,20 @@ With the assistance of ChatGPT and Doubao, I have begun preparing a bilingual ed
 📖 [Read Chapter One online](https://zctpy.github.io/niepanmiaoxinjing/)
 
 **Prepared by Layman Xile**
+
+---
+
+## 双语漫画电子书 · Bilingual Comic Ebook
+
+### 一念之间 · 清静经（全18集）
+
+沈一、林晚与弥音在日常相处、旅行和约会中体会觉察、坦诚与清静。
+
+📚 **[打开网页电子书 · Read the complete collection](https://zctpy.github.io/niepanmiaoxinjing/qingjing/)**
+
+- 全十八集中英双语漫画，独立目录、逐集翻页与章节直达链接。
+- 支持手机及电脑、放大阅读、夜读、设备本地阅读进度与单集图片保存。
+- 网页源码与完整画幅 WebP 图片见 [`qingjing/`](qingjing/)。
+- 无需安装依赖。下载仓库后可直接打开 `qingjing/index.html`，或用任意静态服务器运行。
+
+A complete 18-episode bilingual comic inspired by the Qingjing Jing, with chapter navigation, image zoom, dark mode, and reading progress saved on your device. No account or build step required.
