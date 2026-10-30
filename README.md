@@ -52,3 +52,18 @@ A complete 18-episode bilingual comic inspired by the Qingjing Jing, with chapte
 📂 [电子书文件与下载](foyijing/index.html) · 下载后可用浏览器打开，无需安装。
 
 **The Buddha’s Discourse on Medicine:** read the original Chinese, modern Chinese, or English in a single ebook.
+
+
+---
+
+## 法界之心 · 大灵岩寺四十九天闭关纪实
+
+一部中英双语图文电子书，记录山寺闭关期间的见闻与感悟。
+
+📖 **[在线阅读《法界之心》](https://zctpy.github.io/niepanmiaoxinjing/fajiezhixin/)**
+
+📥 **[下载完整网页电子书（HTML）](https://github.com/zctpy/niepanmiaoxinjing/raw/refs/heads/main/fajiezhixin/index.html)**
+
+支持中英对照、中文及英文单独阅读，提供日期目录和字号调整。下载后的 HTML 已包含封面与插图，可直接用浏览器离线打开。
+
+**The Heart of the Dharma Realm:** an illustrated bilingual account of a forty-nine-day retreat at Dalingyan Temple. Read online or download the self-contained HTML edition.
