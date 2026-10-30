@@ -40,3 +40,15 @@ With the assistance of ChatGPT and Doubao, I have begun preparing a bilingual ed
 - 无需安装依赖。下载仓库后可直接打开 `qingjing/index.html`，或用任意静态服务器运行。
 
 A complete 18-episode bilingual comic inspired by the Qingjing Jing, with chapter navigation, image zoom, dark mode, and reading progress saved on your device. No account or build step required.
+
+---
+
+## 佛说佛医经 · 三种版本阅读
+
+📖 **[在线阅读《佛说佛医经》](https://zctpy.github.io/niepanmiaoxinjing/foyijing/)**
+
+经文原文、白话译文与英文译文自由切换，包含章节目录、字号调节和本地阅读进度。白话与英文版本经适当合并和简化；个别难解处保留说明。经中的古代医学观念不作为现代医疗建议。
+
+📂 [电子书文件与下载](foyijing/index.html) · 下载后可用浏览器打开，无需安装。
+
+**The Buddha’s Discourse on Medicine:** read the original Chinese, modern Chinese, or English in a single ebook.
