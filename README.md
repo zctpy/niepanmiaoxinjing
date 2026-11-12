@@ -24,6 +24,13 @@ With the assistance of ChatGPT and Doubao, I have begun preparing a bilingual ed
 
 **Prepared by Layman Xile**
 
+
+## 佛经网页电子书 · 2026年11月12日新增
+
+今日整理的佛经网页电子书已汇入作品库，按作品分别阅读，也可下载独立部署包。
+
+📚 **[打开电子书总目录](https://zctpy.github.io/niepanmiaoxinjing/ebooks/2026-11-12/)** · [浏览仓库中的全部文件](https://github.com/zctpy/niepanmiaoxinjing/tree/main/ebooks/2026-11-12)
+
 ---
 
 ## 双语漫画电子书 · Bilingual Comic Ebook
